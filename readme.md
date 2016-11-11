@@ -12,14 +12,14 @@ cd ansible-userguide-pdf-docker
 docker build -t ansible-pdf-doc .
 ```
 
-## Run on default branch (1.9)
+## Run on default branch (devel)
 ```
 docker run -i -t --volume $PWD/dist:/work/dist --rm ansible-pdf-doc
 ```
 
-## Run on branch param
+## Run on param branch
 ```
-docker run -i -t --volume $PWD/dist:/work/dist --rm ansible-pdf-doc ./make-pdf.sh stable-2.0
+docker run -i -t --volume $PWD/dist:/work/dist --rm ansible-pdf-doc stable-2.2
 ```
 
 ## Results
